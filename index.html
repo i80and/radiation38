@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radiation 38</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+
+	<script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.0.15-0/stitch.js"></script>
+	<script type="text/javascript" src="lib/login.js"></script>
+</head>
+
+<body id="xibalba" class="desktop webgl">
+	<div class="pane" id="foo"></div>
+	<div id="game" class="webgl-only">
+		<canvas id="canvas" class="landscape-only"></canvas>
+
+		<div class="panel desktop-only">
+			<div class="option">
+				<input type="checkbox" id="requestFullscreen"/>
+				<label for="requestFullscreen"><span></span>Fullscreen</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="no-webgl-only">
+		<div id="no-webgl-notice" class="panel">
+			<p>
+				Your browser does not support WebGL. Try
+				<a href="http://www.mozilla.com/firefox/">Firefox</a>.
+			</p>
+		</div>
+	</div>
+
+</body>
+</html>
